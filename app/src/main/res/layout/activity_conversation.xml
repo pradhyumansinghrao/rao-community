@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activities.ConversationActivity">
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_height="65dp"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" tools:ignore="MissingConstraints">
+
+
+        <android.support.v7.widget.CardView
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" tools:ignore="UseCompoundDrawables">
+
+
+                <ImageView
+                        android:id="@+id/back_btn"
+                        android:layout_margin="10dp"
+                        android:contentDescription="@string/drawer_button_image"
+                        android:src="@drawable/ic_arrow_back_24dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+
+                <TextView
+                       android:id="@+id/activity_title"
+                       android:layout_margin="10dp"
+                       android:textSize="15sp"
+                       android:textColor="@color/white"
+                       android:text="@string/app_name"
+                       android:gravity="center"
+                       android:textAlignment="center"
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"/>
+
+
+
+                <android.support.v7.widget.Toolbar
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/toolbar_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="?attr/actionBarSize"
+                        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                />
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_messages"
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+            <EditText
+                    android:id="@+id/mes"
+                    android:inputType="text"
+                    android:hint="@string/enter_message"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="center"
+                    android:layout_margin="12dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:autofillHints="@string/enter_message"
+                    android:layout_height="wrap_content"
+                    android:maxLines="6"
+
+                    tools:targetApi="o"/>
+
+            <ImageView
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_send_blue_24dp"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp" android:contentDescription="@string/send_message"/>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</android.support.design.widget.CoordinatorLayout>
+
+

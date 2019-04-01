@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="waykunth.raocommunity">
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+            android:name=".RaoCommunity"
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            tools:ignore="GoogleAppIndexingWarning">
+        <activity
+                android:name=".activities.FullScreenPhotoActivity"
+                android:theme="@style/BlackTheme">
+        </activity>
+        <activity android:name=".activities.OtherUserProfileActivity">
+        </activity>
+        <activity
+                android:name=".activities.EditTextActivity"
+                android:theme="@style/StartActivityTheme">
+        </activity>
+        <activity android:name=".activities.EditProfileActivity">
+        </activity>
+        <activity android:name=".activities.ConversationActivity">
+        </activity>
+        <activity android:name=".activities.NewConversationActivity">
+        </activity>
+        <activity android:name=".activities.SavedActivity">
+        </activity>
+        <activity android:name=".activities.MyNotificationActivity">
+        </activity>
+        <activity android:name=".activities.MyPostActivity">
+        </activity>
+        <activity android:name=".activities.CreateNotificationActivity">
+        </activity>
+        <activity android:name=".activities.CreatePostActivity">
+        </activity>
+        <activity android:name=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.LoginActivity">
+        </activity>
+        <activity
+                android:name=".activities.StartActivity"
+                android:theme="@style/StartActivityTheme">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "905548125696",
+    "firebase_url": "https://raocommunity-f2b17.firebaseio.com",
+    "project_id": "raocommunity-f2b17",
+    "storage_bucket": "raocommunity-f2b17.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905548125696:android:d1c1c2e119e2f5f1",
+        "android_client_info": {
+          "package_name": "waykunth.raocommunity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "905548125696-e9i335bjf0svsc1ps73v03c5e5k5c3p1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "waykunth.raocommunity",
+            "certificate_hash": "e7309b05944277f0a4263ea664651eb15d467b79"
+          }
+        },
+        {
+          "client_id": "905548125696-91b9gmpui9ak4rbvrvod7hg041lqm1t7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKidj6LhpgM1m-ueErNOMb3loMRXyEWyU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "905548125696-91b9gmpui9ak4rbvrvod7hg041lqm1t7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

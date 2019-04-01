@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.CreatePostActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_height="65dp"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+        <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            <ImageView
+                    android:id="@+id/back_btn"
+                    android:layout_margin="10dp"
+                    android:contentDescription="@string/drawer_button_image"
+                    android:src="@drawable/ic_clear_white_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+            <TextView
+                    android:id="@+id/activityName"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:text="@string/write_post"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+
+
+            <android.support.v7.widget.Toolbar
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/toolbar_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="?attr/actionBarSize"
+                    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            />
+
+        </LinearLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <ImageView
+            android:id="@+id/create_post_image"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:contentDescription="@string/create_post_image"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"/>
+
+
+        <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            <EditText
+                    android:id="@+id/mes"
+                    android:hint="@string/write_something"
+                    android:background="@android:color/transparent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="12dp"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+            />
+
+        </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_height="65dp"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" tools:ignore="MissingConstraints">
+
+
+    <android.support.v7.widget.CardView
+            android:background="@color/colorPrimary"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" tools:ignore="UseCompoundDrawables">
+
+
+        <ImageView
+                android:id="@+id/drawer_btn"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/drawer_button_image"
+                android:src="@drawable/ic_menu_white_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+        <TextView
+                android:layout_margin="10dp"
+                android:textColor="@color/white"
+                android:text="@string/app_name"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+
+            <android.support.v7.widget.Toolbar
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/toolbar_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="?attr/actionBarSize"
+                    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            />
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="56dp"
+            android:layout_marginTop="56dp"
+            android:text="@string/title_home"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp"
+            android:background="?android:attr/windowBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:itemBackground="@color/white"
+            app:itemIconTint="@drawable/select_bottom_navigation_item"
+            app:itemTextColor="@drawable/select_bottom_navigation_item"
+            app:menu="@menu/navigation"/>
+
+</android.support.constraint.ConstraintLayout>

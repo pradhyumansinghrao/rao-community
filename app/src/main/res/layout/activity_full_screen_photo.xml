@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:orientation="vertical"
+        tools:context=".activities.FullScreenPhotoActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_height="65dp"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+            android:background="@color/black"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" tools:ignore="MissingConstraints">
+
+
+        <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" tools:ignore="UseCompoundDrawables">
+
+
+            <ImageView
+                    android:id="@+id/back_btn_full_screen"
+                    android:layout_margin="10dp"
+                    android:contentDescription="@string/drawer_button_image"
+                    android:src="@drawable/ic_clear_white_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+            <TextView
+                    android:id="@+id/activityName"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:text="@string/user_name"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+
+
+            <android.support.v7.widget.Toolbar
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/toolbar_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="?attr/actionBarSize"
+                    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            />
+
+        </LinearLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ImageView
+            android:id="@+id/user_full_photo"
+            android:layout_marginTop="50dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:src="@drawable/sample1"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"/>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

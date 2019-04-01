@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="wrap_content" xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardView"
+        android:layout_marginBottom="8dp"
+        card_view:cardElevation="3dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <!--<com.facebook.drawee.view.SimpleDraweeView-->
+                    <!--android:id="@+id/user_photo"-->
+                    <!--fresco:roundedCornerRadius="5dp"-->
+                    <!--fresco:roundBottomStart="false"-->
+                    <!--fresco:roundBottomEnd="false"-->
+                    <!--fresco:roundWithOverlayColor="@color/blue"-->
+                    <!--fresco:roundingBorderWidth="1dp"-->
+                    <!--fresco:roundingBorderColor="@color/red"-->
+                    <!--android:layout_width="40dp"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--card_view:placeholderImage="@color/lightgray"-->
+            <!--/>-->
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user_photo"
+                    android:src="@drawable/default_profile"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+            />
+
+
+            <LinearLayout
+                    android:layout_marginStart="45dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="13sp"
+                        tools:ignore="PrivateResource"/>
+                <TextView
+                        android:id="@+id/post_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/lightgray"
+                />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <!--<com.facebook.drawee.view.SimpleDraweeView-->
+                <!--android:id="@+id/post_photo"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="250dp"-->
+                <!--android:scaleType="fitXY"-->
+                <!--card_view:placeholderImage="@color/lightgray"-->
+        <!--/>-->
+
+
+        <ImageView
+                android:id="@+id/post_photo"
+                android:src="@drawable/default_profile"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:contentDescription="@string/post_photo"
+        />
+
+
+        <LinearLayout
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/post_desc"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="15sp"
+                    android:text="@string/desc"
+                    tools:ignore="PrivateResource"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
